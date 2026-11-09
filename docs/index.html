@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tea Bag Drawer Divider</title>
+<style>
+  body { margin: 0; background: #fbfaf3; color: #242a1e; font: 17px/1.6 -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; }
+  main { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+  h1 { margin: 0; font-size: 2.4rem; }
+  .intro { color: #69705b; margin: 4px 0 20px; }
+  img { width: 100%; display: block; border-radius: 12px; background: #eef1e8; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; margin-top: 32px; }
+  .grid h2 { font-size: 1.1rem; margin: 10px 0 2px; }
+  .grid p { margin: 0; color: #69705b; }
+  .print { margin-top: 40px; padding: 16px 20px; background: #edf3e1; border-radius: 12px; }
+  .print h2 { margin: 0 0 6px; font-size: 1.1rem; }
+  .print p { margin: 0 0 8px; }
+  .print p:last-child { margin-bottom: 0; }
+  .note { margin-top: 28px; color: #69705b; font-size: 0.95rem; }
+  a { color: #3f6b2f; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Tea Bag Drawer Divider</h1>
+  <p class="intro">A spring-loaded wall that stands across a kitchen drawer to keep tea bags sorted. No glue, screws or tape: a spring at each end pushes a pad against the drawer's side walls, and it pops out when you want to move it.</p>
+  <img src="img/hero.png" alt="Tea bag drawer divider: a green wall with a slotted spring at each end and two tan pads">
+
+  <div class="grid">
+    <div>
+      <img src="img/springs.png" alt="Front view of the divider">
+      <h2>Springs at the ends</h2>
+      <p>Each end of the 1.2 mm wall is a set of 18 thin beams cut into the same sheet. They squeeze 3 mm per end, and parallel links slide the pads straight in so they don't tilt.</p>
+    </div>
+    <div>
+      <img src="img/clip.png" alt="Close-up of one end: the spring and its clip-on pad">
+      <h2>Pads clip on</h2>
+      <p>Two T-pads slide down onto the end posts and press flat against the drawer walls. A 0.05 mm press fit grips them; the clip's ends are looser so they start on easily.</p>
+    </div>
+    <div>
+      <img src="img/plate.png" alt="Print plate layout: the wall diagonal, two pads in the corner">
+      <h2>Prints flat</h2>
+      <p>The wall prints flat on the diagonal, corner to corner, with the pads face-down in the free corner. No supports. The ready-made parts suit a 290 mm drawer.</p>
+    </div>
+  </div>
+
+  <div class="print">
+    <h2>Printing and files</h2>
+    <p>Download <a href="divider_plate.3mf" download>divider_plate.3mf</a> and open it in Bambu Studio. It is a ready-to-slice project for the X2D: Bambu PLA Matte, 0.20 mm layers, 3 walls, 25% gyroid, no supports. About 23 minutes and 15 g.</p>
+    <p>For another drawer width, use the <a href="divider.scad" download>OpenSCAD script</a>: drawers 150 to 295.5 mm wide fit on a 256 mm plate. The ready-made profile is 290 mm.</p>
+    <p>Exact geometry for remixing: <a href="divider.step" download>divider.step</a>, or the source in the <a href="https://github.com/ivanifchen/tea-bags-drawer-divider">repository</a>.</p>
+  </div>
+
+  <p class="note">The middle is open below a 25 mm top strip, which keeps it light and lets it span the drawer without bowing. Anything shorter than about 35 mm, like a tea bag lying flat, can slide underneath.</p>
+</main>
+</body>
+</html>
