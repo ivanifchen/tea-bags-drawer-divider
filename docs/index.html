@@ -19,13 +19,18 @@
   .print p:last-child { margin-bottom: 0; }
   .note { margin-top: 28px; color: #69705b; font-size: 0.95rem; }
   a { color: #3f6b2f; }
+  model-viewer { width: 100%; height: auto; aspect-ratio: 3 / 2; display: block; border-radius: 12px; background: #eef1f6; --poster-color: transparent; }
+  .hint { margin: 6px 0 0; font-size: 0.9rem; text-align: center; opacity: 0.6; }
 </style>
+<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.4.0/model-viewer.min.js"></script>
 </head>
 <body>
 <main>
   <h1>Tea Bag Drawer Divider</h1>
   <p class="intro">A spring-loaded wall that stands across a kitchen drawer to keep tea bags sorted. No glue, screws or tape: a spring at each end pushes a pad against the drawer's side walls, and it pops out when you want to move it.</p>
-  <img src="img/hero.png" alt="Tea bag drawer divider: a green wall with a slotted spring at each end and two tan pads">
+  <model-viewer src="divider.glb" poster="img/hero.png" alt="Tea bag drawer divider: a green wall with a slotted spring at each end and two tan pads" camera-controls auto-rotate
+    touch-action="pan-y" environment-image="neutral" shadow-intensity="1" camera-orbit="-20deg 75deg 80%"></model-viewer>
+  <p class="hint">Drag to turn it, scroll or pinch to zoom.</p>
 
   <div class="grid">
     <div>
